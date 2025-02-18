@@ -57,3 +57,4 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2ECCD9239CC34B3990C26FADF7C6A }}
           package: release.zip
+          app_build_command: 'npm run build'  # Optional: Explicitly specify the build command
